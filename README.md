@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Aero-Clean: Sistema de Gestão de Produtos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Banner do Projeto](https://placehold.co/800x300/00cec9/FFFFFF?text=Aero-Clean&font=asap)
 
-## Available Scripts
+> Projeto Fullstack desenvolvido para o Módulo Intermediário do curso, focado na criação de um painel administrativo completo para gerenciamento de estoque, utilizando React e uma API externa.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+### Sobre o Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O **Aero-Clean** é um painel de controle (dashboard) que simula o sistema interno de uma loja online. Ele permite que um administrador gerencie o catálogo de produtos de forma simples e eficiente, realizando todas as operações essenciais de um e-commerce.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Este projeto foi construído em equipe, seguindo as melhores práticas de desenvolvimento, como o uso de Git/GitHub para versionamento, divisão de tarefas em branches e integração contínua através de Pull Requests.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔧 Funcionalidades Implementadas
 
-### `npm run build`
+O sistema possui um **CRUD (Create, Read, Update, Delete)** completo para a gestão de produtos:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Listagem de Produtos (`Read`):** A página principal exibe todos os produtos cadastrados, buscando os dados em tempo real da API.
+* **Cadastro de Produtos (`Create`):** Um formulário completo para adicionar novos itens ao catálogo, com validações e envio direto para a API.
+* **Edição de Produtos (`Update`):** Uma página dinâmica que permite alterar as informações de um produto existente. O sistema identifica o produto pelo ID na URL.
+* **Exclusão de Produtos (`Delete`):** Funcionalidade para remover produtos do estoque diretamente pela API.
+* **Navegação Fluida (SPA):** Utiliza React Router para uma experiência de Single Page Application, onde a navegação entre as telas ocorre sem recarregar a página.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🛠️ Tecnologias Utilizadas
 
-### `npm run eject`
+Este projeto foi construído com as seguintes tecnologias e ferramentas:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* **Front-End:**
+    * [**React.js**](https://reactjs.org/) (com [**Vite**](https://vitejs.dev/))
+    * [**Material-UI (MUI)**](https://mui.com/) para componentização e design
+    * [**React Router DOM**](https://reactrouter.com/) para o sistema de rotas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* **Back-End (Simulado):**
+    * [**MockAPI.io**](https://mockapi.io/) para criar e hospedar uma API RESTful para os dados dos produtos.
+    * [**Axios**](https://axios-http.com/) para realizar as chamadas HTTP (requisições) para a API.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* **Ferramentas e Fluxo de Trabalho:**
+    * **Git** e **GitHub** para controle de versão e trabalho em equipe.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### ⚙️ Como Rodar o Projeto Localmente
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para executar este projeto na sua máquina, siga os passos abaixo:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/axiel404/react-product-management.git
+    ```
 
-### Code Splitting
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
 
-### Analyzing the Bundle Size
+4.  Abra [http://localhost:5173](http://localhost:5173) no seu navegador para ver a aplicação.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
